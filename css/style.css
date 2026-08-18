@@ -1,0 +1,358 @@
+:root {
+    --primary: rgb(255, 255, 255);
+    --secondary: rgb(0, 0, 0);
+}
+
+body {
+    color: var(--secondary);
+    background-image: url('/img/Far_away_and_long_ago_by_Willy_Pogany.png');
+    background-size: 90%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    image-rendering: pixelated;
+    font-family: Helvetica, sans-serif;
+    text-size-adjust: none;
+    padding: 0;
+    margin: 0;
+}
+
+#oneko {
+    scale: 1.5;
+}
+
+#container {
+    max-width: 400px;
+    width: 100%;
+    background: var(--primary);
+    border: 1px solid var(--secondary);
+    transition: 0.75s;
+    margin: 50px auto;
+}
+
+header {
+    font-size: 4.25rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 8px 0 8px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: var(--secondary);
+    margin: 0 0 8px 0;
+}
+
+nav a,button {
+    width: 100%;
+    background: var(--primary);
+    border: none;
+    font-size: inherit;
+    text-decoration: none;
+    text-align: center;
+    padding: 4px 0;
+    cursor: pointer;
+}
+
+nav a:hover,button:hover {
+    color: var(--primary);
+    background: var(--secondary);
+}
+
+.dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    border: 1px solid var(--secondary);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    width: 100%;
+    padding: 4px 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid var(--secondary);
+    padding: 8px;
+    margin: 0 8px 8px 8px;
+}
+
+h1 {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    border: 1px solid var(--secondary);
+    padding: 8px;
+}
+
+#introduction img {
+    max-width: 95.3px;
+    max-height: 114px;
+    margin: -4px -4px -8px -4px;
+}
+
+#introduction div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#introduction p {
+    padding: 0;
+    margin: 0;
+}
+
+#nekocafe-status {
+    max-width: calc(100% - 18px); /* this to stop it overflowing for no reason because of the padding or something it doesnt recognise the width of the element or something idk tbh */
+    border: 1px solid var(--secondary);
+    padding: 8px;
+    margin: 0;
+}
+
+#nekocafe-text {
+    padding: 0;
+    margin: 0;
+}
+
+#music-and-weather {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid var(--secondary);
+}
+
+#weather {
+    width: 100%;
+    border-left: 1px solid var(--secondary);
+    filter: grayscale(1);
+    transition: 0.25s;
+}
+
+#weather:hover {
+    filter: grayscale(0)
+}
+
+#music {
+    width: 100%;
+    filter: grayscale(1);
+    transition: 0.25s;
+}
+
+#music:hover {
+    filter: grayscale(0);
+}
+
+#music h1 {
+    margin: 8px 8px 0 8px;
+}
+
+#weather h1 {
+    margin: 8px;
+}
+
+#webrings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+    border: 1px solid var(--secondary);
+    padding: 8px;
+}
+
+.webrings-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#webrings img {
+    max-width: 100px;
+}
+
+#stats {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0;
+    margin: 0 0 8px 0;
+}
+
+#buttons-container {
+    border: 1px solid var(--secondary);
+    padding: 8px;
+    margin: 8px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 8px 0 0 0;
+}
+
+#buttons img {
+    display: block;
+    width: 88px;
+    height: 31px;
+    filter: grayscale(1);
+    transition: 0.25s;
+    z-index: 1;
+}
+
+#buttons img:hover {
+    filter: grayscale(0);
+    transform: scale3d(1.5, 1.5, 1.5);
+    z-index: 3;
+}
+
+#buttons a:hover {
+    background: none;
+    z-index: 3;
+}
+
+#my-button {
+    width: 88px;
+    height: 31px;
+    border: 1px solid var(--secondary);
+    margin: 18px 0 0 0;
+}
+
+#ads-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: space-between;
+    border: 1px solid var(--secondary);
+    padding: 8px;
+    margin: 0 8px 8px 8px;
+}
+
+
+.ad {
+    filter: grayscale(1);
+    transition: 0.25s;
+    height: 180px;
+    width: 100%;
+    border: none;
+}
+
+.ad:hover {
+    filter: grayscale(0);
+}
+
+.john {
+    filter: grayscale(1);
+    transition: 0.25s;
+}
+
+.john:hover {
+    filter: grayscale(0);
+}
+
+#information {
+    border: 1px solid var(--secondary);
+    padding: 8px;
+    margin: 8px;
+}
+
+#comments {
+    border: 1px solid var(--secondary);
+    padding: 8px;
+    margin: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+a {
+    color: var(--secondary);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--primary);
+    background: var(--secondary);
+}
+
+ul {
+    list-style-type: square;
+    padding: 0 0 0 20px;
+    margin: 0;
+}
+
+code {
+    display: block;
+    font-size: 0.8rem;
+    font-family: Jetbrains Mono, monospace;
+    border: 1px solid var(--secondary);
+    padding: 4px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.webring {
+    display: flex;
+    flex-direction: row;
+}
+
+.webring .prev, .webring .home, .webring .next {
+    text-decoration: none;
+    padding: 4px 12px 4px 12px;
+}
+
+.webring .prev:hover, .webring .home:hover, .webring .next:hover {
+    background: var(--secondary);
+    color: var(--primary);
+}
+
+.webring .home {
+    width: 100%;
+    text-align: center;
+    overflow-wrap: break-word;
+    padding: 4px;
+}
+
+::selection {
+    color: var(--primary);
+    background: var(--secondary);
+}
+
+@media (width < 500px) {
+    #container {
+        margin: 0 auto;
+    }
+    #oneko {
+        display: none;
+    }
+}

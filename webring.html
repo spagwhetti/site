@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/webring.css">
+    <script src="js/webring.js"></script>
+    <script src="https://u.widget.st/ar.js"></script>
+    <title>spagwhetti :: bolognese webring</title>
+</head>
+<body>
+    <script src="js/oneko.js"></script>
+    <div id="container">
+        <header>
+            SPAGHETTI
+        </header>
+        <nav>
+            <a href="/">home</a>
+            <a href="/blog">blog</a>
+            <a href="/webring.html">webring</a>
+            <div class="dropdown">
+                <button class="dropbtn">more</button>
+                <div class="dropdown-content">
+                    <a href="/riiatw.html">RIIATW</a>
+                    <a href="/credits.html">Credits</a>
+                </div>
+            </div>
+            <a href="https://nekoweb.org/follow/spaghetti.nekoweb.org">[ + ]</a>
+        </nav>
+        <main>
+            <section id="about">
+                <img src="img/cats.png">
+                <div>
+                    <h1>About</h1>
+                    <p>
+                        <span id="swatchTimeClock"></span><script type="module">import dotBeatTime from 'https://cdn.skypack.dev/dot-beat-time';</script>This is my webring that I made a while ago, if you want to join it, embed the iframe on your site and use the contact form at the bottom of the page to apply, include your website URL and what you want your site to be named in the form. Please keep your name alphanumeric, no spaces or symbols except dashes (-).
+                    </p>
+                </div>
+            </section>
+            <section id="members-container">
+                <h1>Members</h1>
+                <div id="members">Loading members...</div>
+            </section>
+            <section id="embed-container">
+                <h1>Embed</h1>
+                <p>
+                    Place this iframe on your site somewhere, replace <b>[NAME]</b> with your wanted name, then use the contact form.
+                </p>
+                <code>
+                    &lt;iframe src="https://spagwhetti.github.io/embed.html?name=<b>[NAME]</b>" style="border:none; height:3rem; width:100%"&gt;&lt;/iframe&gt
+                </code>
+                <p>This is what the embed will look like:</p>
+                <div id="embed-preview">
+                    <iframe src="https://spagwhetti.github.io/embed.html?name=spaghetti" style="border:none; height:3rem; width:100%"></iframe>
+                </div>
+            </section>
+            <section id="contact-form">
+                <div>
+                    <h1>Contact Form</h1>
+                    <ws-widget type="contact" iid="4589">
+                        <form id="form">
+                            <div class="row">
+                                <input name="name" label="Name" placeholder="Your name">
+                                <input name="website" label="Website" placeholder="Your Website">
+                            </div>
+                            <button type="submit">Send</button>
+                        </form>
+                    </ws-widget>
+                </div>
+                <img src="img/eye.png">
+            </section>
+        </main>
+        <footer>
+            <span>2024-2026 © spaghetti</span>
+            <span>hosted by <a href="https://nekoweb.org/">nekoweb</a></span>
+        </footer>
+    </div>
+</body>
+</html>
