@@ -16,4 +16,4 @@ jobs:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
           nekoweb-domain: 'spaghetti.nekoweb.org'
           nekoweb-username: 'spaghetti'
-          directory: ''
+          directory: 'public'
