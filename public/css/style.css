@@ -32,7 +32,16 @@ body {
 
 #latest-commit {
     position: absolute;
-    transform: translateY(-20px);
+    transform: translateY(-22px);
+    font-size: 0.9rem;
+    outline: 1px solid var(--secondary);
+    padding: 0;
+}
+
+#commitLink {
+    display: block;
+    text-decoration: none;
+    padding: 2px;
 }
 
 header {
