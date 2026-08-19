@@ -1,4 +1,6 @@
-const username = "spaghetti"; // change the username!!!
+// provided by social.nekoweb.org and edited to show "... ago" instead of "dd/mm/yyyy 00:00" with snippets from probably stack overflow
+
+const username = "spaghetti";
 const posts_url = "https://cafe.frizzbees.dev/get_posts/1?name=";
 const profile_url = "https://social.nekoweb.org/profile/?view=";
 const post_url = "https://social.nekoweb.org/post/?id=";
@@ -29,7 +31,6 @@ function timeSince(date) {
     return Math.floor(seconds) + "sec";
 }
 
-// thanks max
 (async () => {
     try {
         const request = await fetch(posts_url + username,);
@@ -47,11 +48,9 @@ function timeSince(date) {
                 <p style="font-size:0.9rem" id="nekocafe-time">${time} ago</p>
             </div>
             <p id="nekocafe-text"><a href="${post_url + json["id"]}">${json["post"]}</a></p>
-        ` // make sure the height on the img fits your page!!!
+        `
 
     } catch (error) {
         console.error(error)
     }
 })();
-
-// <p id="nekocafe-poster"><a href="${profile_url + username}">${json["name"]}</a></p>

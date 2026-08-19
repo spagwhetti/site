@@ -1,3 +1,5 @@
+// moosyu.nekoweb.org
+
 fetch('https://api.github.com/repos/spagwhetti/site/commits?per_page=1')
     .then(res => res.json())
     .then(res => {
