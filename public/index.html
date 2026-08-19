@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/status.js"></script>
+    <script src="js/commit.js"></script>
     <script src="https://u.widget.st/ar.js"></script>
     <title>spagwhetti :: home</title>
 </head>
 <body>
     <script src="js/oneko.js"></script>
     <div id="container">
+        <span id="latest-commit">Latest Commit: <a id="shortHash commitLink" href="">Loading...</a></span>
         <header>
             SPAGHETTI
         </header>
@@ -98,12 +100,12 @@
             </p>
             <div id="buttons">
                 <a href="//rice.place/" target="_blank"><img src="//rice.place/button/wittyrice.gif"></a>
-                <a href="//melankorin.net/" target="_blank"><img src="//melankorin.net/assets/img/buttons/button-1.gif"></a>
+                <a data-tippy-content="A big inspiration for site design." href="//melankorin.net/" target="_blank"><img src="//melankorin.net/assets/img/buttons/button-1.gif"></a>
                 <a href="//eyeorb.net/" target="_blank"><img src="//eyeorb.net/site_button.gif"></a>
                 <a href="//layercake.moe/" target="_blank"><img src="//layercake.moe/assets/images/buttons/mine/layercakebutton.gif"></a>
                 <a href="//sealshore.nekoweb.org/" target="_blank"><img src="//file.garden/aF9Y2rjeJ2PqUbPh/sealshorebutton"></a>
                 <a href="//kimberlygb.neocities.org/" target="_blank"><img src="//kimberlygb.nekoweb.org/pics/button2.png"></a>
-                <a href="//hal.nekoweb.org/" target="_blank"><img src="//hal.nekoweb.org/sitebutton.png"></a>
+                <a data-tippy-content="Love the design of this site." href="//hal.nekoweb.org/" target="_blank"><img src="//hal.nekoweb.org/sitebutton.png"></a>
                 <a href="//pancontinental.neocities.org/" target="_blank"><img src="//pancontinental.neocities.org/images/badges/PCA-badge.gif"></a>
                 <a href="//katrickthekirbyfan.nekoweb.org/" target="_blank"><img src="//katrickthekirbyfan.nekoweb.org/katrickdomainbutton.gif"></a>
                 <a href="//eepynoelle.nekoweb.org/" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAYAAABjyArgAAAAAXNSR0IArs4c6QAABGRJREFUaIHtmk9IHFccxz/bDWTYFYpSoSIe7J6MoFA19KB4iJTO3sSeQlOCB+eQpBACJuS0UAiJUCxNCt09lNCDN9tLiaW4B6nQENcFA43ksBEqqaFbKgm6bA6b7WH8vXnzzzXEVHbdLwy/mTe/N2/nM7/5vTfvbQRgODpVpalD13IlE4kI3Pm19FH/nobSRL8FQGQ4OlUVuFIoWnjahH4QmZ1ubjeupinmYDZr8Y4UCtyFp2kFViqW/qEurdlpuba30Y4w0rldv+UAV4DFCeDXz539o4b0JnZ+La1Sn9jDbgeCuYlcgMXp4x+8pfWriX7rf+lfwri5AJudlnLS88rzJ/VpJe1N9FtM9FtvrZ0wbqB1crH3/Cfn19I8fwLvfkDD2s8+HVH3WyiXAfj955UD13885865AJfP2G/MbNZyA9bziv6E6k2T4+4b/v4nf4r45IshAMY6Kq7yje24Av3LNys123p2H97/yLYAxRy0D6JGES7A4EDWn1S9anLc8sEVsAnDoLt1N7SugD4oZF3FnG1dwzRwR3Cjwk0YBpdOn1RwN7bjLiv73a27jHVU1AMJk0SwSCJY5AIsUQxOBNejJEVMjltqX+Am+6qsb5YABySgbE9XjO7WXTa24/R0xUgYxr6Q9fQATnoQndCdGyWCwyI3DK5+vL5ZoqcrBuwCMZJ9VW4/CG9rvxwMDRrBQdoPrq6erpgGGe49jHDp9EkuTI8E+teK4IbNwV7dexhR+5ICdN25dkrBBZTV6wSlimOZg4MUlA68HVwy2csVa0hF7/pmSaWNMDUjeE86zDvXTvmsrmSyV0HW6wapVgS7Ojn9Y6MRxsEi6eAgxhXLhilQxZqpvK/eWEftax/LUUSQbj94uWcdkAupDwP3RWYq7/vS86rWKOJYRPC3M79xYXqEZF+VZLL3tesXymXYjgNl37lmBGtKJntpTwzW9CsWcnyVXiFhxLHHw7aCPpub4+A9FcplzFSeYiG3r5/AXdyK0t26y+JWlLGOipoA8qo5itA01lHh4s1HFAu5QNBStrgVVTZhGGxsx0M/mV9rHCwT07I9u+88nXq3d8+uqBmyizcfYabyDJ7LKNhBwBOG4Ytc73XBnvO4fsveZrNWcASHLd7JK1Dv9ssfRyiUyy5oCcPATOV9eTloRCHyXlcm23Vus1lnPtrVyXkX78xO68gj77CsNxJn2l4BJabLdoy1JwYZPJdR52baAEoQg3TJqR8UwUHcRC7A4tRIi56iu2dXOD83hBUrMWDuALC61EJ2/IUCmx1/EVg3ww6rSy1M/+tbI1Z6o0VPySn1bM/PDTHT9oqBURsWwMDojrpHO6LDNTC6o3y8199v0VMBvnHV+bOJOF0+k3aN6+rZCqTVpRYXWIHrLQuT97qywOnlJlL/TdMLG1Hf/TlCxvw7ELBe5j3vPc7/8fhA7UlHd2K5kokMR6eqes/XaPqrK69e73QpRgYHJoRH9upSi8//67WDc1quZCL/ASXQay0Xw00lAAAAAElFTkSuQmCC"></a>
@@ -111,17 +113,17 @@
                 <a href="//nikonet.xyz/" target="_blank"><img src="//nikonet.xyz/buttons/nikonet-button.gif"></a>
                 <a href="//orcassiea.nekoweb.org" target="_blank"><img src="//orcassiea.nekoweb.org/OLD/graphics/sitebutton.png"></a>
                 <a href="//twentyphanday.nekoweb.org/" target="_blank"><img src="https://i.postimg.cc/kG46XqhD/ezgif-16d5f3c131cb7a.gif"></a>
-                <a href="//sheep.nekoweb.org/" target="_blank"><img src="//sheep.nekoweb.org/assets/mybutton.gif"></a>
+                <a data-tippy-content="I like the notebook theming based on Hobonichi Techo." href="//sheep.nekoweb.org/" target="_blank"><img src="//sheep.nekoweb.org/assets/mybutton.gif"></a>
                 <a href="//juuyondaime.net/" target="_blank"><img src="//juuyondaime.net/files/images/button.png"></a>
-                <a href="//nyscyra.net/" target="_blank"><img src="//nyscyra.net/img/mayubutton.gif"></a>
-                <a href="//tabris.moe/" target="_blank"><img src="https://tabris.moe/button.png"></a>
-                <a href="//paphere.nekoweb.org" target="_blank"><img src="//paphere.nekoweb.org/images/88x31.png"></a>
+                <a data-tippy-content="Beautifully detailed." href="//nyscyra.net/" target="_blank"><img src="//nyscyra.net/img/mayubutton.gif"></a>
+                <a data-tippy-content="Really like the monochromatic theme." href="//tabris.moe/" target="_blank"><img src="https://tabris.moe/button.png"></a>
+                <a data-tippy-content="I like the modern theming while still being unique." href="//paphere.nekoweb.org" target="_blank"><img src="//paphere.nekoweb.org/images/88x31.png"></a>
                 <a href="//chronodove.neocities.org/" target="_blank"><img src="//i.postimg.cc/T3hxVP29/button.png"></a>
-                <a href="//ivrry.nekoweb.org/" target="_blank"><img src="//ivrry.nekoweb.org/assets/svg/button.svg"></a>
-                <a href="//tilde.club/~april/" target="_blank"><img src="//tilde.club/~april/imgs/btns/button.webp"></a>
+                <a data-tippy-content="Brilliant modern design and theming. The site I discovered nekoweb from." href="//ivrry.nekoweb.org/" target="_blank"><img src="//ivrry.nekoweb.org/assets/svg/button.svg"></a>
+                <a data-tippy-content="" href="//tilde.club/~april/" target="_blank"><img src="//tilde.club/~april/imgs/btns/button.webp"></a>
                 <a href="//jbc.lol/" target="_blank"><img src="//jbc.lol/imgs/buttons/jbtn.svg"></a>
-                <a href="//7vtia.nekoweb.org/" target="_blank"><img src="//7vtia.nekoweb.org/images/7vtia.png"></a>
-                <a href="//mushyooms.nekoweb.org/" target="_blank"><img src="//file.garden/adxXThdfCBC6CmiY/buttons/yoomssimplebutton.gif"></a>
+                <a data-tippy-content="Simple theming with great execution." href="//7vtia.nekoweb.org/" target="_blank"><img src="//7vtia.nekoweb.org/images/7vtia.png"></a>
+                <a data-tippy-content="Amazingly crafted and themed site." href="//mushyooms.nekoweb.org/" target="_blank"><img src="//file.garden/adxXThdfCBC6CmiY/buttons/yoomssimplebutton.gif"></a>
             </div>
             <div class="row">
                 <img id="my-button" src="button.png">
@@ -154,5 +156,10 @@
             <span>hosted by <a href="https://nekoweb.org/">nekoweb</a></span>
         </footer>
     </div>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        tippy('[data-tippy-content]');
+    </script>
 </body>
 </html>

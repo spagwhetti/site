@@ -30,6 +30,11 @@ body {
     margin: 50px auto;
 }
 
+#latest-commit {
+    position: absolute;
+    transform: translateY(-20px);
+}
+
 header {
     font-size: 4.25rem;
     font-weight: bold;
@@ -192,6 +197,28 @@ h1 {
     max-width: 100px;
 }
 
+.webring {
+    display: flex;
+    flex-direction: row;
+}
+
+.webring .prev, .webring .home, .webring .next {
+    text-decoration: none;
+    padding: 4px 12px 4px 12px;
+}
+
+.webring .prev:hover, .webring .home:hover, .webring .next:hover {
+    background: var(--secondary);
+    color: var(--primary);
+}
+
+.webring .home {
+    width: 100%;
+    text-align: center;
+    overflow-wrap: break-word;
+    padding: 4px;
+}
+
 #stats {
     text-align: center;
     font-size: 0.9rem;
@@ -321,31 +348,16 @@ code {
     gap: 8px;
 }
 
-.webring {
-    display: flex;
-    flex-direction: row;
-}
-
-.webring .prev, .webring .home, .webring .next {
-    text-decoration: none;
-    padding: 4px 12px 4px 12px;
-}
-
-.webring .prev:hover, .webring .home:hover, .webring .next:hover {
-    background: var(--secondary);
-    color: var(--primary);
-}
-
-.webring .home {
-    width: 100%;
-    text-align: center;
-    overflow-wrap: break-word;
-    padding: 4px;
-}
-
 ::selection {
     color: var(--primary);
     background: var(--secondary);
+}
+
+.tippy-content {
+    max-width: 200px;
+    color: var(--secondary);
+    background: var(--primary);
+    border: 1px solid var(--secondary);
 }
 
 @media (width < 500px) {
