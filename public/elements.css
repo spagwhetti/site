@@ -3,37 +3,45 @@
   display: flex;
   justify-content: center;
   background: #fff;
-    background-image: url(https://spaghetti.nekoweb.org/spaghetti.nekoweb.org/img/Far_away_and_long_ago_by_Willy_Pogany.png);
-    background-size: 95%;
-    background-position: 50% 65%;
-    background-repeat: no-repeat;
+  background-image: url(https://spaghetti.nekoweb.org/spaghetti.nekoweb.org/img/Far_away_and_long_ago_by_Willy_Pogany.png);
+  background-size: 95%;
+  background-position: 50% 65%;
+  background-repeat: no-repeat;
   border: 1px solid #000;
 }
 
 .site-box > a > p {
   color: #000;
   font-family: Helvetica, sans-serif;
-    font-size: 1.55rem;
-    padding: 8px 0;
+  font-size: 1.55rem;
+  padding: 8px 0;
 }
 
-.site-box > a > span, .site-box .follow, .site-box .sitefeature {
+.site-box > a > span {
+  display: none;
+}
+
+.site-box .follow {
+  display: none
+}
+
+.site-box .sitefeature {
   display: none;
 }
 
 .post-box {
-    background-color: #fff;
-    border: 1px solid #000;
-    padding: 8px;
-    border-radius: 0;
-    color: #000;
-    font-family: Helvetica, sans-serif;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 8px;
+  border-radius: 0;
+  color: #000;
+  font-family: Helvetica, sans-serif;
 }
 
 .post-box .post-title {
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: Helvetica, sans-serif;
-    font-style: normal;
-    margin-top: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  margin-top: 8px;
 }
