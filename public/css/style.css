@@ -108,6 +108,15 @@ main {
 }
 
 h1 {
+    width: 100%;
+    color: var(--primary);
+    background: var(--secondary);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
     font-size: 1rem;
     padding: 0;
     margin: 0;
@@ -178,11 +187,11 @@ h1 {
     filter: grayscale(0);
 }
 
-#music h1 {
+#music h2 {
     margin: 8px 8px 0 8px;
 }
 
-#weather h1 {
+#weather h2 {
     margin: 8px;
 }
 
@@ -228,11 +237,23 @@ h1 {
     padding: 4px;
 }
 
-#stats {
+#stats-container {
+    border: 1px solid var(--secondary);
+    padding: 8px;
+    margin: 8px;
+}
+
+#stats-header {
+    width: 100%;
+    color: var(--primary);
+    background: var(--secondary);
+    font-size: 1.5rem;
     text-align: center;
-    font-size: 0.9rem;
-    padding: 0;
-    margin: 0 0 8px 0;
+    margin: 0 0 8px 0
+}
+
+#views, #followers {
+    font-weight: bold;
 }
 
 #buttons-container {

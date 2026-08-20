@@ -61,17 +61,17 @@
             </div>
             <section id="music-and-weather">
                 <div id="music">
-                    <h1>Music</h1>
+                    <h2>Music</h2>
                     <ws-widget type="lastfm" iid="1721"></ws-widget>
                 </div>
                 <div id="weather">
-                    <h1>Weather</h1>
+                    <h2>Weather</h2>
                     <ws-widget type="weather" iid="1836"></ws-widget>
                 </div>
             </section>
             <div id="webrings">
                 <div class="webrings-container">
-                    <h1>Webrings</h1>
+                    <h2>Webrings</h2>
                     <div class="webrings-list">
                         <div class="webring">
                             <a class="prev" href="https://spagwhetti.github.io/redirect.html?to=prev&amp;name=spaghetti" target="_parent">&lt;</a>
@@ -98,7 +98,20 @@
                 <img data-tippy-content="Source: Pinterest" src="img/tiger.png">
             </div>
         </main>
-        <p id="stats">Wow! Number go up!: <span id="views">Loading...</span> views, and <span id="followers">Loading...</span> followers.</p>
+        <section id="stats-container">
+            <h1 id="stats-header">Statistics</h1>
+            <div style="display:flex;flex-direction:row;justify-content:space-between;">
+                <ul>
+                    <li>
+                        <span id="views">Loading...</span> views.
+                    </li>
+                    <li>
+                        <span id="followers">Loading...</span> followers.
+                    </li>
+                </ul>
+                <img data-tippy-content="Source: nukoChannel" src="img/nukoApplause.gif" style="height:60px;width:60px;filter:grayscale(1)">
+            </div>
+        </section>
         <section id="buttons-container">
             <h1>Buttons</h1>
             <p>
@@ -148,7 +161,7 @@
         <section id="interests-container">
             <h1 id="interests-header">Interests</h1>
             <div style="display:flex;flex-direction:row;justify-content:space-between;">
-                <h1>Games</h1>
+                <h2>Games</h2>
                 <small>Inspired by <a href="https://7vtia.nekoweb.org/#interests" target="_blank">7vtia</a>'s interests page.</small>
             </div>
             <div style="display:flex;flex-direction:row;justify-content:space-between;">
@@ -158,7 +171,7 @@
                         <li>Terraria + tModLoader</li>
                         <li>Scrap Mechanic</li>
                     </ul>
-                    <h1>Shows</h1>
+                    <h2>Shows</h2>
                     <ul>
                         <li data-tippy-content="My favourite doctor is Matt Smith." style="width:fit-content;text-decoration:underline dotted;">Doctor Who</li>
                         <li data-tippy-content="While there are a lot of jokes that definitely haven't aged well I still think it is a very funny show" style="width:fit-content;text-decoration:underline dotted;">The Inbetweeners</li>

@@ -44,7 +44,7 @@ function timeSince(date) {
         
         div.innerHTML = `
             <div style="display:flex;flex-direction:row;justify-content:space-between;">
-                <h1>Status</h1>
+                <h2>Status</h2>
                 <p style="font-size:0.9rem" id="nekocafe-time">${time} ago</p>
             </div>
             <p id="nekocafe-text"><a href="${post_url + json["id"]}">${json["post"]}</a></p>
