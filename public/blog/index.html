@@ -30,7 +30,7 @@
         </nav>
         <main>
             <div class="row">
-                <img src="../img/tree.png" style="max-width: 90px;">
+                <img data-tippy-content="Source: Pinterest" src="../img/tree.png" style="max-width: 90px;">
                 <p>This is my blog, I rarely post so there is barely anything here. The date format is dd/mm/yy.</p>
             </div>
             <section id="blog-list">
@@ -55,5 +55,10 @@
             <span>hosted by <a href="https://nekoweb.org/">nekoweb</a></span>
         </footer>
     </div>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        tippy('[data-tippy-content]');
+    </script>
 </body>
 </html>
