@@ -383,7 +383,7 @@ code {
 
 ::selection {
     color: var(--primary);
-    background: var(--secondary);
+    background: #454545;
 }
 
 .tippy-content {
