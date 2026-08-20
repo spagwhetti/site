@@ -318,6 +318,12 @@ h1 {
     border: 1px solid var(--secondary);
     padding: 8px;
     margin: 8px;
+    filter: grayscale(1);
+    transition: 0.25s;
+}
+
+#comments:hover {
+    filter: grayscale(0);
 }
 
 footer {
