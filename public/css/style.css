@@ -107,21 +107,6 @@ main {
     margin: 0 8px 8px 8px;
 }
 
-h1 {
-    width: 100%;
-    color: var(--primary);
-    background: var(--secondary);
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 0;
-}
-
-h2 {
-    font-size: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
 #introduction {
     display: flex;
     flex-direction: row;
@@ -368,6 +353,21 @@ footer {
     padding: 8px;
 }
 
+h1 {
+    width: 100%;
+    color: var(--primary);
+    background: var(--secondary);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
 a {
     color: var(--secondary);
 }
@@ -412,6 +412,10 @@ code {
     color: var(--secondary);
     background: var(--primary);
     border: 1px solid var(--secondary);
+}
+
+[data-tippy-content] {
+    text-decoration: underline dotted;
 }
 
 @media (width < 500px) {
