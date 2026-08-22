@@ -33,8 +33,6 @@ body {
     position: absolute;
     transform: translateY(-22px);
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     max-width: 400px;
     width: 100%;
     font-size: 0.9rem;
@@ -42,7 +40,12 @@ body {
     padding: 0;
 }
 
-#commitMessage {
+#latest-commit::after {
+    display: block;
+    width: 100%;
+    height: 100%;
+    mask-size: 100%;
+    content: ' ';
     mask-image: linear-gradient(90deg, var(--primary) 60%, transparent);
 }
 
