@@ -32,9 +32,18 @@ body {
 #latest-commit {
     position: absolute;
     transform: translateY(-22px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 400px;
+    width: 100%;
     font-size: 0.9rem;
     outline: 1px solid var(--secondary);
     padding: 0;
+}
+
+#commitMessage {
+    mask-image: linear-gradient(90deg, var(--primary) 60%, transparent);
 }
 
 #commitLink {
