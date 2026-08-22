@@ -32,21 +32,9 @@ body {
 #latest-commit {
     position: absolute;
     transform: translateY(-22px);
-    white-space: nowrap;
-    max-width: 400px;
-    width: 100%;
     font-size: 0.9rem;
     outline: 1px solid var(--secondary);
     padding: 0;
-}
-
-#latest-commit::after {
-    display: block;
-    width: 100%;
-    height: 100%;
-    mask-size: 100%;
-    content: ' ';
-    mask-image: linear-gradient(90deg, var(--primary) 60%, transparent);
 }
 
 #commitLink {
