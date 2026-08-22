@@ -236,7 +236,7 @@ main {
     margin: 0 0 8px 0
 }
 
-#views, #followers {
+#views, #followers, #uptime {
     font-weight: bold;
 }
 
