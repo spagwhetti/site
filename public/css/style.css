@@ -395,6 +395,25 @@ code {
     padding: 4px;
 }
 
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 50%;
+    border: 1px solid var(--secondary);
+    padding: 4px;
+}
+
+tr {
+    transition: 0.25s;
+}
+
+tr:hover {
+    color: var(--primary);
+    background: var(--secondary);
+}
+
 .row {
     display: flex;
     flex-direction: row;
