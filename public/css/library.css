@@ -1,0 +1,24 @@
+#gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    .item {
+        max-width: calc(50% - 6px);
+        width: 100%;
+        border: 1px solid var(--secondary);
+        img {
+            max-width: 100%;
+            filter: grayscale(1);
+            transition: 0.25s;
+        }
+        img:hover {
+            filter: grayscale(0);
+        }
+        p {
+            text-align: center;
+            padding: 8px;
+            margin: 0;
+        }
+    }
+}
