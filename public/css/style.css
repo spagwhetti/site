@@ -186,6 +186,7 @@ main {
     gap: 8px;
     border: 1px solid var(--secondary);
     padding: 8px;
+    margin: 8px;
 }
 
 .webrings-container {
