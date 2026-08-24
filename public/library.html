@@ -34,39 +34,39 @@
             <h1>Library</h1>
             <p>Here is a list of books I own, roughly sorted. Images coming in the future.</p>
             <div id="gallery">
-                <div class="item">
+                <div data-tippy-content="My favourite charity shop book find." class="item">
                     <img src="img/library/placeholder.png">
                     <p>Tools for Living - Fiell</p>
                 </div>
-                <div class="item">
+                <div data-tippy-content="Charity shop find." class="item">
                     <img src="img/library/placeholder.png">
                     <p>Royal Academy Illustrated 2011</p>
                 </div>
-                <div class="item">
+                <div data-tippy-content="Charity shop find." class="item">
                     <img src="img/library/placeholder.png">
                     <p>Style & Design</p>
                 </div>
-                <div class="item">
+                <div data-tippy-content="Charity shop find, very polyhedrony." class="item">
                     <img src="img/library/placeholder.png">
                     <p>Polyhedron Models</p>
                 </div>
-                <div class="item">
+                <div data-tippy-content="My brother gifted me this." class="item">
                     <img src="img/library/placeholder.png">
                     <p>filmmakers on film - David Jenkins</p>
                 </div>
-                <div class="item">
+                <div data-tippy-content="My brother also gifted me this." class="item">
                     <img src="img/library/placeholder.png">
                     <p>COLOURS OF FILM - Charles Bramesco</p>
                 </div>
-                <div class="item">
+                <div data-tippy-content="£5 from a garden centre." class="item">
                     <img src="img/library/placeholder.png">
                     <p>Great British Cars - Mirco De Cet</p>
                 </div>
-                <div class="item">
+                <div data-tippy-content="Charity shop find." class="item">
                     <img src="img/library/placeholder.png">
                     <p>THE COOL 500 - TopGear</p>
                 </div>
-                <div class="item">
+                <div data-tippy-content="Found this in my house, was probably my brothers." class="item">
                     <img src="img/library/placeholder.png">
                     <p>The Science of Supercars</p>
                 </div>
@@ -77,5 +77,10 @@
             <span>hosted by <a href="https://nekoweb.org/">nekoweb</a></span>
         </footer>
     </div>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        tippy('[data-tippy-content]');
+    </script>
 </body>
 </html>
