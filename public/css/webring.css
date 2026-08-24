@@ -39,8 +39,11 @@
 }
 
 #contact-form img {
-    max-width: 100px;
-    object-fit: cover;
+    max-width: 120px;
+}
+
+#contact-form > div {
+    width: 100%;
 }
 
 #form {
@@ -51,7 +54,6 @@
 }
 
 #form input {
-    width: 100%;
     border: 1px solid var(--secondary);
     padding: 4px;
 }
