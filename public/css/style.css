@@ -126,7 +126,7 @@ main {
             writing-mode: sideways-lr;
             text-orientation: sideways;
             padding: 0;
-            margin: 0 0 0 -24px;
+            margin: 0 -6px 0 -24px;
         }
     }
 }
