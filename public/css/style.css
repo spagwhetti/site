@@ -112,6 +112,23 @@ main {
     gap: 8px;
     border: 1px solid var(--secondary);
     padding: 8px;
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .text {
+            background: linear-gradient(0deg, #000000, #f1f1f1);
+            background-clip: text;
+            color: transparent;
+
+            font-size: 6rem;
+            font-weight: bold;
+            writing-mode: sideways-lr;
+            text-orientation: sideways;
+            padding: 0;
+            margin: 0 0 0 -24px;
+        }
+    }
 }
 
 #introduction img {
@@ -121,7 +138,6 @@ main {
 }
 
 #introduction div {
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 8px;
