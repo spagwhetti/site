@@ -26,7 +26,8 @@ body {
     background: var(--primary);
     border: 1px solid var(--secondary);
     transition: 0.75s;
-    margin: 50px auto;
+    margin: 100px auto;
+    /*box-shadow: 0px 0px 300px 300px var(--primary);*/
 }
 
 #latest-commit {
@@ -35,6 +36,11 @@ body {
     font-size: 0.9rem;
     outline: 1px solid var(--secondary);
     padding: 0;
+}
+
+#latest-update-image {
+    position: absolute;
+    transform: translateY(-105px) translateX(60px);
 }
 
 #commitLink {
