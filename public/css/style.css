@@ -26,7 +26,7 @@ body {
     background: var(--primary);
     border: 1px solid var(--secondary);
     transition: 0.75s;
-    margin: 100px auto;
+    margin: 50px auto;
     /*box-shadow: 0px 0px 300px 300px var(--primary);*/
 }
 
