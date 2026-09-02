@@ -38,11 +38,6 @@ body {
     padding: 0;
 }
 
-#latest-update-image {
-    position: absolute;
-    transform: translateY(-105px) translateX(60px);
-}
-
 #commitLink {
     display: block;
     text-decoration: none;
