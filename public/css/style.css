@@ -20,7 +20,7 @@ body {
     scale: 1.5;
 }
 
-/*#monster-cloud {
+#monster-cloud {
     position: fixed;
     bottom: 16px;
     left: 57%;
@@ -29,7 +29,7 @@ body {
     pointer-events: none;
     animation: bob 3s ease-in-out infinite;
 }
-
+/*
 #monster-cloud-2 {
     position: fixed;
     top: -24px;
