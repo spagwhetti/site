@@ -20,6 +20,26 @@ body {
     scale: 1.5;
 }
 
+/*#monster-cloud {
+    position: fixed;
+    bottom: 16px;
+    left: 57%;
+    height: 350px;
+    width: 350px;
+    pointer-events: none;
+    animation: bob 3s ease-in-out infinite;
+}
+
+#monster-cloud-2 {
+    position: fixed;
+    top: -24px;
+    left: 24.25%;
+    height: 350px;
+    width: 350px;
+    pointer-events: none;
+    animation: bob 3s ease-in-out infinite;
+}*/
+
 #container {
     max-width: 400px;
     width: 100%;
@@ -460,5 +480,23 @@ tr:hover {
     }
     #oneko {
         display: none;
+    }
+}
+
+@media (width < 1000px) {
+    #monster-cloud, #monster-cloud-2 {
+        display: none;
+    }
+}
+
+@keyframes bob {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
