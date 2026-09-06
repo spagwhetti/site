@@ -8,6 +8,6 @@ function setSite() {
     
     document.getElementById('image').src = sites[rand][1];
     document.getElementById('link').href = sites[rand][0];
-    setInterval(setSite, 30000);
 }
 setSite();
+setInterval(setSite, 30000);
