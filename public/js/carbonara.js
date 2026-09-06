@@ -1,5 +1,6 @@
 var sites = [
-    ["https://spaghetti.nekoweb.org/","https://spaghetti.nekoweb.org/img/carbonara-image.png"]
+    ["https://spaghetti.nekoweb.org/","https://spaghetti.nekoweb.org/img/carbonara-image.png"],
+    ["https://7vtia.nekoweb.org/","https://7vtia.nekoweb.org/images/7vtiad.gif"]
 ]
 
 function setSite() {
