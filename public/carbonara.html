@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://u.widget.st/ar.js"></script>
+    <title>spagwhetti :: carbonara</title>
+    <style>
+        #form {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        #form input {
+            border: 1px solid var(--secondary);
+            padding: 4px;
+        }
+
+        #form textarea {
+            border: 1px solid var(--secondary);
+            padding: 4px;
+        }
+
+        #form button {
+            background: var(--primary);
+            border: 1px solid var(--secondary);
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        #form button:hover {
+            color: var(--primary);
+            background: var(--secondary);
+        }
+    </style>
+</head>
+<body>
+    <script src="js/oneko.js"></script>
+    <div id="container">
+        <header>
+            SPAGHETTI
+        </header>
+        <nav>
+            <a href="index.html">home</a>
+            <a href="links.html">links</a>
+            <a href="blog/index.html">blog</a>
+            <div class="dropdown">
+                <button class="dropbtn">to join</button>
+                <div class="dropdown-content">
+                    <a href="webring.html">bolognese webring</a>
+                    <a href="carbonara.html">carbonara ads</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">more</button>
+                <div class="dropdown-content">
+                    <a href="library.html">library</a>
+                    <a href="setup.html">setup</a>
+                    <a href="riiatw.html">riiatw</a>
+                    <a href="credits.html">credits</a>
+                </div>
+            </div>
+            <a href="https://nekoweb.org/follow/spaghetti.nekoweb.org">[ + ]</a>
+        </nav>
+        <main>
+            <h1>Carbonara</h1>
+
+            <p>Carbonara is my advertisement system thingy, every 30 seconds it displays a new sites advertisement. Fill in the form at the bottom of the page with your site link and image link to join.</p>
+
+            <h2>Rules / Information:</h2>
+            <ul>
+                <li>I do not accept any racism, transphobia, or bigotry.</li>
+                <li>I do not accept sites that are specifically explicit / NSFW sites. However you are allowed pages with artistic nudity as long as the page is marked explicit, or the image is marked explicit and blurred until hovered or similar.</li>
+                <li>Your site must have actual content.</li>
+                <li>You should add the embed to your own site if you have an ad in the system so you are not just advertising yourself without advertising other people on your site aswell. If you want, you can add the embed to your site even if you do not have an ad in the system.</li>
+            </ul>
+            <h2>Image Rules:</h2>
+            <ul>
+                <li>Your image should be 200*200px.</li>
+                <li>I do not accept image hosting websites like Imgur, catbox, or filegarden. Images should be hosted on your own website or your own personal image hoster.</li>
+                <li>It should be in a common image format, for example; png, jpg, webp, gif.</li>
+                <li>If your image is animated, keep flashing to minimum.</li>
+                <li>Your image should not contain anything explicit.</li>
+                <li>Keep in mind that a small portion in the bottom left of your image will be blocked by the overlay, don't put anything important there.</li>
+            </ul>
+
+            <h1>Embed</h1>
+            <h2>Preview:</h2>
+            <iframe src="carbonara-embed.html" style="border:none;width:200px;height:200px;"></iframe>
+            <h2>Code:</h2>
+            <code>&lt;iframe src="https://spaghetti.nekoweb.org/carbonara-embed" style="border:none;width:200px;height:200px;"&gt;&lt;/iframe&gt;</code>
+
+            <h1>Form</h1>
+            <ws-widget type="contact" iid="10839">
+                <form id="form">
+                    <input name="website" label="Website" placeholder="Your website">
+                    <input name="image" label="Image" placeholder="Your image link">
+                    <input type="email" name="Email" placeholder="Your email">
+                    <button type="submit">Send</button>
+                </form>
+            </ws-widget>
+        </main>
+        <footer>
+            <span>2024-2026 © spaghetti</span>
+            <span>hosted by <a href="https://nekoweb.org/">nekoweb</a></span>
+        </footer>
+    </div>
+</body>
+</html>

@@ -105,6 +105,7 @@ nav a:hover,button:hover {
     display: none;
     position: absolute;
     width: 100%;
+    min-width: max-content;
     border: 1px solid var(--secondary);
 }
 
@@ -114,7 +115,6 @@ nav a:hover,button:hover {
 
 .dropdown-content a {
     display: block;
-    width: 100%;
     padding: 4px 0;
 }
 
@@ -448,6 +448,22 @@ tr {
 }
 
 tr:hover {
+    color: var(--primary);
+    background: var(--secondary);
+}
+
+details {
+    padding: 0;
+    margin: 0;
+}
+
+summary {
+    padding: 2px 4px;
+    margin: -12px 0 8px 0;
+    cursor: pointer;
+}
+
+summary:hover {
     color: var(--primary);
     background: var(--secondary);
 }
