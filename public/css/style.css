@@ -141,7 +141,7 @@ main {
             background: linear-gradient(0deg, #000000, #f1f1f1);
             background-clip: text;
             color: transparent;
-
+            
             font-size: 6rem;
             font-weight: bold;
             writing-mode: sideways-lr;
@@ -190,22 +190,11 @@ main {
 #weather {
     width: 100%;
     border-left: 1px solid var(--secondary);
-    filter: grayscale(1);
-    transition: 0.25s;
 }
 
-#weather:hover {
-    filter: grayscale(0)
-}
 
 #music {
     width: 100%;
-    filter: grayscale(1);
-    transition: 0.25s;
-}
-
-#music:hover {
-    filter: grayscale(0);
 }
 
 #music h2 {
@@ -297,13 +286,11 @@ main {
     display: block;
     width: 88px;
     height: 31px;
-    filter: grayscale(1);
     transition: 0.25s;
     z-index: 1;
 }
 
 #buttons img:hover {
-    filter: grayscale(0);
     transform: scale3d(1.5, 1.5, 1.5);
     z-index: 3;
 }
@@ -346,24 +333,9 @@ main {
 }
 
 .ad {
-    filter: grayscale(1);
-    transition: 0.25s;
     height: 180px;
     width: 100%;
     border: none;
-}
-
-.ad:hover {
-    filter: grayscale(0);
-}
-
-.john {
-    filter: grayscale(1);
-    transition: 0.25s;
-}
-
-.john:hover {
-    filter: grayscale(0);
 }
 
 #information {
@@ -376,18 +348,25 @@ main {
     border: 1px solid var(--secondary);
     padding: 8px;
     margin: 8px;
-    filter: grayscale(1);
-    transition: 0.25s;
-}
-
-#comments:hover {
-    filter: grayscale(0);
 }
 
 footer {
     display: flex;
     justify-content: space-between;
     padding: 8px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    max-width: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit:cover;
+    cursor: pointer;
 }
 
 h1 {

@@ -24,10 +24,18 @@
         </header>
         <nav>
             <a href="index.html">home</a>
-            <a href="links.html">links</a>
-            <a href="blog/index.html">blog</a>
             <div class="dropdown">
-                <button class="dropbtn">to join</button>
+                <button class="dropbtn">on site</button>
+                <div class="dropdown-content">
+                    <a href="links.html">links</a>
+                    <a href="blog/index.html">blog</a>
+                    <a href="interests.html">interests</a>
+                    <a href="library.html">library</a>
+                    <a href="setup.html">setup</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">for you</button>
                 <div class="dropdown-content">
                     <a href="webring.html">bolognese webring</a>
                     <a href="carbonara.html">carbonara ads</a>
@@ -36,8 +44,6 @@
             <div class="dropdown">
                 <button class="dropbtn">more</button>
                 <div class="dropdown-content">
-                    <a href="library.html">library</a>
-                    <a href="setup.html">setup</a>
                     <a href="riiatw.html">riiatw</a>
                     <a href="credits.html">credits</a>
                 </div>
@@ -68,24 +74,27 @@
                         I'm also interested in cars, my favourite currently is between the <a href="https://wikipedia.org/wiki/Toyota_MR2#Second_generation_(W20;_1989%E2%80%931999)" target="_blank">Toyota MR2 Gen 2</a> and the <a href="https://wikipedia.org/wiki/Porsche_944" target="_blank">Porsche 944</a>. I would like to own a nice old car in the future, but not until I have a garage to store it in.
                     </p>
 
-                    <div id="nekocafe-status"></div>
+                    <div id="nekocafe-status">Loading...</div>
                 </div>
             </div>
+
             <section id="music-and-weather">
                 <div id="music">
-                    <h2>Music</h2>
+                    <h2>I last listened to:</h2>
                     <ws-widget type="lastfm" iid="1721"></ws-widget>
                 </div>
                 <div id="weather">
-                    <h2>Weather</h2>
+                    <h2>The weather near me:</h2>
                     <ws-widget type="weather" iid="1836"></ws-widget>
                 </div>
             </section>
         </main>
+
+        <!--
+
         <section id="stats-container">
             <h1 id="stats-header">This site has...</h1>
             <div style="display:flex;flex-direction:row;justify-content:space-between;">
-                <!--<img data-tippy-content="Source: nukoChannel" src="img/nukoClap.gif" style="height:50px;width:50px;filter:grayscale(1);margin-top:16px;transform:scaleX(-1);" alt="Animated image of a white pixelated cat clapping.">-->
                 <ul>
                     <li>
                         <span id="views">Loading...</span> views.
@@ -97,37 +106,12 @@
                         Been online for <span id="uptime">Loading...</span> days.
                     </li>
                 </ul>
-                <!--<img data-tippy-content="Source: nukoChannel" src="img/nukoApplause.gif" style="height:50px;width:50px;filter:grayscale(1);margin-top:16px;" alt="Animated image of a white pixelated cat applauding.">-->
                 <img src="img/assets/spaghetti.png" style="height:calc(44px * 1.7); width:calc(59px * 1.7);">
             </div>
         </section>
-        <section id="interests-container">
-            <h1 id="interests-header">Interests</h1>
-            <div style="display:flex;flex-direction:row;justify-content:space-between;">
-                <h2>Games</h2>
-                <small>Inspired by <a href="https://7vtia.nekoweb.org/#interests" target="_blank">7vtia</a>'s interests page.</small>
-            </div>
-            <div style="display:flex;flex-direction:row;justify-content:space-between;">
-                <div style="max-width: 50%">
-                    <ul>
-                        <li>Minecraft</li>
-                        <li>Terraria + tModLoader</li>
-                        <li>Scrap Mechanic</li>
-                    </ul>
-                    <h2>Shows</h2>
-                    <ul>
-                        <li data-tippy-content="My favourite doctor is Matt Smith.">Doctor Who</li>
-                        <li data-tippy-content="While there are a lot of jokes that definitely haven't aged well I still think it is a very funny show">The Inbetweeners</li>
-                    </ul>
-                    <h2>Hobbies</h2>
-                    <ul>
-                        <li>I like browsing the web on my computer.</li>
-                        <li data-tippy-content="Although I am definitely not a professional.">Taking photos.</li>
-                    </ul>
-                </div>
-                <img src="img/assets/corner.png" style="max-width: 50%;">
-            </div>
-        </section>
+
+        -->
+
         <section id="comments">
             <h1>Comment</h1>
             <p>

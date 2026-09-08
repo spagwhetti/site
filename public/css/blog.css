@@ -29,21 +29,3 @@ p {
     padding: 0;
     margin: 0;
 }
-
-.gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.gallery img {
-    max-width: 50%;
-    aspect-ratio: 1 / 1;
-    object-fit:cover;
-    cursor: pointer;
-    filter: grayscale(1);
-    transition: 0.25s;
-    &:hover {
-        filter: grayscale(0);
-    }
-}

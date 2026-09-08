@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://u.widget.st/ar.js"></script>
+    <title>spagwhetti :: interests</title>
+    <style>
+        p {
+            margin: 8px 0;
+        }
+
+        .interest-container {
+            border: 1px solid var(--secondary);
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <script src="js/oneko.js"></script>
+    <div id="container">
+        <header>
+            SPAGHETTI
+        </header>
+        <nav>
+            <a href="index.html">home</a>
+            <div class="dropdown">
+                <button class="dropbtn">on site</button>
+                <div class="dropdown-content">
+                    <a href="links.html">links</a>
+                    <a href="blog/index.html">blog</a>
+                    <a href="interests.html">interests</a>
+                    <a href="library.html">library</a>
+                    <a href="setup.html">setup</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">for you</button>
+                <div class="dropdown-content">
+                    <a href="webring.html">bolognese webring</a>
+                    <a href="carbonara.html">carbonara ads</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">more</button>
+                <div class="dropdown-content">
+                    <a href="riiatw.html">riiatw</a>
+                    <a href="credits.html">credits</a>
+                </div>
+            </div>
+            <a href="https://nekoweb.org/follow/spaghetti.nekoweb.org">[ + ]</a>
+        </nav>
+        <main>
+            <h1>Interests</h1>
+
+            <small>Inspired by <a href="https://7vtia.nekoweb.org/#interests" target="_blank">7vtia</a>'s interests page.</small>
+
+            <div class="interest-container">
+                <h2>Music</h2>
+                <p>
+                    These are a few albums I like, hover over the images to see their names. <small>Image sources: <a href="https://last.fm/">Last.fm</a>.</small>
+                </p>
+                <ws-widget class="gallery" type="viewer" iid="6403" embed="script">
+                    <img data-tippy-content="Girlfriends - Girlfriends" src="img/music/girlfriends.png">
+                    <img data-tippy-content="Come In - Weatherday" src="img/music/come-in.png">
+                    <img data-tippy-content="Hornet Disaster - Weatherday" src="img/music/hornet-disaster.png">
+                    <img data-tippy-content="for the rest of your life - twikipedia" src="img/music/for-the-rest-of-your-life.png">
+                    <img data-tippy-content="In This World - susquatch" src="img/music/in-this-world.png">
+                </ws-widget>
+            </div>
+
+            <div class="interest-container">
+                <h2>Shows</h2>
+                <ul>
+                    <li data-tippy-content="My favourite doctor is Matt Smith.">Doctor Who</li>
+                    <li data-tippy-content="While there are a lot of jokes that definitely haven't aged well I still think it is a very funny show">The Inbetweeners</li>
+                </ul>
+            </div>
+
+            <div class="interest-container">
+                <h2>Films</h2>
+                <ul>
+                    <li>Maze Runner</li>
+                    <li>Project Hail Mary</li>
+                    <li data-tippy-content="Yes this does mean a few shows, but there are more films so it goes here.">Star Wars</li>
+                </ul>
+            </div>
+
+            <div class="interest-container">
+                <h2>Games</h2>
+                <ul>
+                    <li>Minecraft</li>
+                    <li>Terraria + tModLoader</li>
+                    <li>Scrap Mechanic</li>
+                </ul>
+            </div>
+
+            <div class="interest-container">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>I like browsing the web on my computer.</li>
+                    <li data-tippy-content="Although I am definitely not a professional. You can see some examples of photos I have taken in various blog posts.">Taking photos.</li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <span>2024-2026 © spaghetti</span>
+            <span>hosted by <a href="https://nekoweb.org/">nekoweb</a></span>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        tippy('[data-tippy-content]');
+    </script>
+</body>
+</html>
