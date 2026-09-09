@@ -1,0 +1,98 @@
+#webrings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+    border: 1px solid var(--secondary);
+    padding: 8px;
+    margin: 8px;
+}
+
+.webrings-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#webrings img {
+    max-width: 100px;
+}
+
+.webring {
+    display: flex;
+    flex-direction: row;
+}
+
+.webring .prev, .webring .home, .webring .next {
+    text-decoration: none;
+    padding: 4px 12px 4px 12px;
+}
+
+.webring .prev:hover, .webring .home:hover, .webring .next:hover {
+    background: var(--secondary);
+    color: var(--primary);
+}
+
+.webring .home {
+    width: 100%;
+    text-align: center;
+    overflow-wrap: break-word;
+    padding: 4px;
+}
+
+#buttons-container {
+    border: 1px solid var(--secondary);
+    padding: 8px;
+    margin: 8px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 8px 0 0 0;
+}
+
+#buttons img {
+    display: block;
+    width: 88px;
+    height: 31px;
+    transition: 0.25s;
+    z-index: 1;
+}
+
+#buttons img:hover {
+    transform: scale3d(1.5, 1.5, 1.5);
+    z-index: 3;
+}
+
+#buttons a:hover {
+    background: none;
+    z-index: 3;
+}
+
+#my-button {
+    width: 88px;
+    height: 31px;
+    border: 1px solid var(--secondary);
+    margin: 18px 0 0 0;
+}
+
+#ads-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: space-between;
+    border: 1px solid var(--secondary);
+    padding: 8px;
+    margin: 0 8px 8px 8px;
+}
+
+.ad {
+    height: 180px;
+    width: 100%;
+    border: none;
+}

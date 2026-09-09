@@ -29,16 +29,6 @@ body {
     pointer-events: none;
     animation: bob 3s ease-in-out infinite;
 }
-/*
-#monster-cloud-2 {
-    position: fixed;
-    top: -24px;
-    left: 24.25%;
-    height: 350px;
-    width: 350px;
-    pointer-events: none;
-    animation: bob 3s ease-in-out infinite;
-}*/
 
 #container {
     max-width: 400px;
@@ -47,7 +37,6 @@ body {
     border: 1px solid var(--secondary);
     transition: 0.75s;
     margin: 50px auto;
-    /*box-shadow: 0px 0px 300px 300px var(--primary);*/
 }
 
 #latest-commit {
@@ -192,7 +181,6 @@ main {
     border-left: 1px solid var(--secondary);
 }
 
-
 #music {
     width: 100%;
 }
@@ -205,48 +193,7 @@ main {
     margin: 8px;
 }
 
-#webrings {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 8px;
-    border: 1px solid var(--secondary);
-    padding: 8px;
-    margin: 8px;
-}
-
-.webrings-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-#webrings img {
-    max-width: 100px;
-}
-
-.webring {
-    display: flex;
-    flex-direction: row;
-}
-
-.webring .prev, .webring .home, .webring .next {
-    text-decoration: none;
-    padding: 4px 12px 4px 12px;
-}
-
-.webring .prev:hover, .webring .home:hover, .webring .next:hover {
-    background: var(--secondary);
-    color: var(--primary);
-}
-
-.webring .home {
-    width: 100%;
-    text-align: center;
-    overflow-wrap: break-word;
-    padding: 4px;
-}
+/*
 
 #stats-container {
     border: 1px solid var(--secondary);
@@ -267,76 +214,7 @@ main {
     font-weight: bold;
 }
 
-#buttons-container {
-    border: 1px solid var(--secondary);
-    padding: 8px;
-    margin: 8px;
-}
-
-#buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 4px;
-    margin: 8px 0 0 0;
-}
-
-#buttons img {
-    display: block;
-    width: 88px;
-    height: 31px;
-    transition: 0.25s;
-    z-index: 1;
-}
-
-#buttons img:hover {
-    transform: scale3d(1.5, 1.5, 1.5);
-    z-index: 3;
-}
-
-#buttons a:hover {
-    background: none;
-    z-index: 3;
-}
-
-#my-button {
-    width: 88px;
-    height: 31px;
-    border: 1px solid var(--secondary);
-    margin: 18px 0 0 0;
-}
-
-#interests-container {
-    border: 1px solid var(--secondary);
-    padding: 8px;
-    margin: 8px;
-}
-
-#interests-header {
-    width: 100%;
-    color: var(--primary);
-    background: var(--secondary);
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 0 0 8px 0
-}
-
-#ads-container {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    justify-content: space-between;
-    border: 1px solid var(--secondary);
-    padding: 8px;
-    margin: 0 8px 8px 8px;
-}
-
-.ad {
-    height: 180px;
-    width: 100%;
-    border: none;
-}
+*/
 
 #information {
     border: 1px solid var(--secondary);
