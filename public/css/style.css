@@ -336,6 +336,18 @@ summary:hover {
     background: #454545;
 }
 
+#neocities-warning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    max-width: 300px;
+    background: var(--primary);
+    border: 1px solid var(--secondary);
+    padding: 8px;
+    margin: 8px;
+}
+
 .tippy-content {
     max-width: 200px;
     color: var(--secondary);
@@ -352,6 +364,9 @@ summary:hover {
         margin: 0 auto;
     }
     #oneko {
+        display: none;
+    }
+    #neocities-warning {
         display: none;
     }
 }

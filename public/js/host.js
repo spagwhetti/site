@@ -7,6 +7,7 @@ function setHost() {
     else if ( document.URL.includes('neocities.org') ) {
         element.href = 'https://neocities.org/';
         element.innerText = 'neocities'
+        showNeocitiesWarning();
         if ( document.getElementById('nekocafe-status') ) {
             document.getElementById('nekocafe-status').style.display = 'none'
         }
@@ -21,4 +22,12 @@ function setHost() {
         element.innerText = 'Error...'
     }
 }
+
+function showNeocitiesWarning() {
+    const warning = document.createElement('div');
+    warning.id = 'neocities-warning';
+    warning.innerText = 'You are viewing the site on a backup host, some things may not work as intended or be displayed.'
+    document.body.appendChild(warning)
+}
+
 setHost()
