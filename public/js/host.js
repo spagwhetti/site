@@ -1,21 +1,33 @@
 function setHost() {
-    const element = document.getElementById('host')
+    const host = document.getElementById('host');
+    const follow = document.getElementById('follow');
+    const status = document.getElementById('nekocafe-status');
+    const members = document.getElementById('members-container');
+    const commit = document.getElementById('latest-commit');
     if ( document.URL.includes('nekoweb.org') ) {
-        element.href = 'https://nekoweb.org/';
-        element.innerText = 'nekoweb'
+        host.href = 'https://nekoweb.org/';
+        host.innerText = 'nekoweb'
+        if ( follow ) {
+            follow.href = "https://nekoweb.org/follow/spaghetti.nekoweb.org"
+        }
     }
     else if ( document.URL.includes('neocities.org') ) {
-        element.href = 'https://neocities.org/';
-        element.innerText = 'neocities'
+        host.href = 'https://neocities.org/';
+        host.innerText = 'neocities'
+        if ( follow ) {
+            follow.href = "https://nekoweb.org/follow/spaghetti.nekoweb.org"
+        }
+
         showNeocitiesWarning();
-        if ( document.getElementById('nekocafe-status') ) {
-            document.getElementById('nekocafe-status').style.display = 'none'
+
+        if ( status ) {
+            status.style.display = 'none'
         }
-        if ( document.getElementById('members-container') ) {
-            document.getElementById('members-container').style.display = 'none'
+        if ( members ) {
+            members.style.display = 'none'
         }
-        if ( document.getElementById('latest-commit') ) {
-            document.getElementById('latest-commit').style.display = 'none'
+        if ( commit ) {
+            commit.style.display = 'none'
         }
     }
     else {
