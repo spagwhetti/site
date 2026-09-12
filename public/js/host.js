@@ -15,7 +15,7 @@ function setHost() {
         host.href = 'https://neocities.org/';
         host.innerText = 'neocities'
         if ( follow ) {
-            follow.href = "https://nekoweb.org/follow/spaghetti.nekoweb.org"
+            follow.href = "https://neocities.org/site/spagwhetti"
         }
 
         showNeocitiesWarning();
@@ -31,7 +31,7 @@ function setHost() {
         }
     }
     else {
-        element.innerText = 'Error...'
+        host.innerText = 'Error...'
     }
 }
 
