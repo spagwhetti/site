@@ -7,7 +7,6 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="js/status.js"></script>
     <script src="js/commit.js"></script>
-    <script src="js/stats.js"></script>
     <script src="https://u.widget.st/ar.js"></script>
     <title>spagwhetti :: home</title>
 </head>
@@ -29,9 +28,6 @@
                 <div class="dropdown-content">
                     <a href="links.html">links</a>
                     <a href="blog/index.html">blog</a>
-                    <a href="interests.html">interests</a>
-                    <a href="library.html">library</a>
-                    <a href="setup.html">setup</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -57,16 +53,49 @@
                     <p class="text">spaghetti</p>
                 </div>
                 <div>
-                    <h1>Introduction</h1>
-                    <p>
-                        Hello, welcome to my website on the interwebs. I am <b>spagwhetti</b>, I have lived in the United Kingdom my whole life, specifically England. I got into webdev around 2 years ago (as of Aug 26), I started by just seeing people in other communities I was in have their own sites, and decided that I wanted to learn how to do that aswell, so I did - and I suppose it led to this site.
-                    </p>
-                    <p>
-                        I like music a bit, my favourite 'band' right now is <a href="https://girlfriends.bandcamp.com/" target="_blank">Girlfriends by Jerry Joiner</a>, my favourite track from the album is <i>Brobocop</i>, but this will probably change quickly. Pretty perfect math rock album in my opinion.
-                    </p>
-                    <p>
-                        I'm also interested in cars, my favourite currently is the <a href="https://wikipedia.org/wiki/Toyota_MR2#Second_generation_(W20;_1989%E2%80%931999)" target="_blank">Toyota MR2 Gen 2</a>.
-                    </p>
+                    <h1>Welcome</h1>
+                    <p>Hi, welcome to my website! Just so you know; javascript isn't required but it does make your viewing experience better. Have fun looking around!</p>
+
+                    <div class="index-tabs">
+                        <h1>About</h1>
+                        <div class="tab-nav">
+                            <button class="btn open" onclick="openTab(event,'Introduction')">Introduction</button>
+                            <button class="btn" onclick="openTab(event,'Interests')">Interests</button>
+                        </div>
+                        <div id="Introduction" class="tab">
+                            <div style="display:flex; flex-direction:row;">
+                                <img src="img/blog/06-09-26/3.jpg" style="width:50px; height:50px; border:1px solid var(--secondary);">
+                                <p>Helloo, I'm <b>spagwhetti</b>, the creator of this website. I was born in the united kingdom less than <i>2,147,483,647</i> years ago and have lived here since, I've been doing webdev for a bit over 2 years now.</p>
+                            </div>
+                            <p>My favourite animal is probably a <a href="https://wikipedia.org/wiki/Tiger" target="_blank">tiger</a>, they're pretty cool, and orange.
+                            <p>Feel free to check out my hardware and software setup on <a href="setup.html">the setup page</a>, what books I own on <a href="library.html">the library page</a>, or what I have to say every so often on <a href="blog">my blog</a>!</p>
+                        </div>
+
+                        <div id="Interests" class="tab" style="display:none">
+                            <small>Inspired by <a href="https://7vtia.nekoweb.org/#interests" target="_blank">7vtia</a>'s interests page.</small>
+                            <h2>Music</h2>
+                            <p>I like lots of music, but mostly sub-genres of rock. Here are a few albums that I've liked recently:</p>
+                            <ws-widget class="gallery" type="viewer" iid="6403" embed="script">
+                                <img data-tippy-content="Girlfriends - Girlfriends" src="img/music/girlfriends.png">
+                                <img data-tippy-content="Come In - Weatherday" src="img/music/come-in.png">
+                                <img data-tippy-content="Hornet Disaster - Weatherday" src="img/music/hornet-disaster.png">
+                                <img data-tippy-content="for the rest of your life - twikipedia" src="img/music/for-the-rest-of-your-life.png">
+                            </ws-widget>
+                            <small>Image Sources:
+                                <a href="https://www.last.fm/music/Girlfriends/Girlfriends/+images/e17d6b823b24c4f36741f34cd40f81c0" target="_blank">1</a>
+                                <a href="https://www.last.fm/music/Weatherday/Come+In/+images/04320832727734600b1bdd210630b484" target="_blank">2</a>
+                                <a href="https://www.last.fm/music/Weatherday/Hornet+Disaster/+images/21ec61deb6676c592ab32a77c1aa3438" target="_blank">3</a>
+                                <a href="https://www.last.fm/music/twikipedia/for+the+rest+of+your+life/+images/50582581fa0e7caef224e8f367f656cb" target="_blank">4</a>
+                            </small>
+
+                            <h2>Cars</h2>
+                            <p>
+                                My interest in cars mainly started when I went to my first car show in August 2025, although I had liked cars a bit before that. I like what would probably be considered <i>'retro 90s sports cars'</i> I guess. My favourite car is the <a href="https://wikipedia.org/wiki/Toyota_MR2#Second_generation_(W20;_1989%E2%80%931999)" target="_blank">Toyota MR2 Gen 2</a>, I'd love to own one like in the image below at some point.
+                            </p>
+                            <img style="width:100%;" src="img/assets/mr2.png">
+                            <small>Image Source: <a href="https://pinterest.com/pin/19492210872107106/" target="_blank">Pinterest</a></small>
+                        </div>
+                    </div>
 
                     <div id="nekocafe-status">Loading... If you are on Neocities, this will not work.</div>
                 </div>
@@ -103,6 +132,7 @@
     </div>
     <img id="monster-cloud" src="img/assets/monster-cloud.png">
     <script src="js/host.js"></script>
+    <script src="js/tabs.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script>

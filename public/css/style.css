@@ -138,13 +138,12 @@ main {
             padding: 0;
             margin: 0 -6px 0 -24px;
         }
+        img {
+            max-width: 95.3px;
+            max-height: 114px;
+            margin: -4px -4px -8px -4px;
+        }
     }
-}
-
-#introduction img {
-    max-width: 95.3px;
-    max-height: 114px;
-    margin: -4px -4px -8px -4px;
 }
 
 #introduction div {
@@ -157,6 +156,38 @@ main {
     padding: 0;
     margin: 0;
 }
+
+.index-tabs {
+    gap: 0!important;
+    border: 1px solid var(--secondary);
+    .tab {
+        padding: 8px;
+        max-height: 500px;
+        overflow: scroll;
+    }
+}
+
+.tab-nav {
+    display: flex!important;
+    flex-direction: row!important;
+    gap: 0!important;
+    .btn {
+        color: var(--primary);
+        background: var(--secondary);
+        width: 100%;
+        &:hover {
+            color: var(--secondary);
+            background: var(--primary);
+        }
+        &.open {
+            color: var(--secondary);
+            background: var(--primary);
+        }
+    }
+    
+}
+
+
 
 #nekocafe-status {
     max-width: calc(100% - 18px); /* this to stop it overflowing for no reason because of the padding or something it doesnt recognise the width of the element or something idk tbh */
@@ -193,29 +224,6 @@ main {
     margin: 8px;
 }
 
-/*
-
-#stats-container {
-    border: 1px solid var(--secondary);
-    padding: 8px;
-    margin: 8px;
-}
-
-#stats-header {
-    width: 100%;
-    color: var(--primary);
-    background: var(--secondary);
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 0 0 8px 0
-}
-
-#views, #followers, #uptime {
-    font-weight: bold;
-}
-
-*/
-
 #information {
     border: 1px solid var(--secondary);
     padding: 8px;
@@ -243,7 +251,7 @@ footer {
 .gallery img {
     max-width: 50%;
     aspect-ratio: 1 / 1;
-    object-fit:cover;
+    object-fit: cover;
     cursor: pointer;
 }
 
