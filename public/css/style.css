@@ -1,10 +1,11 @@
 :root {
-    --primary: rgb(255, 255, 255);
-    --secondary: rgb(0, 0, 0);
+    --primary: #fff;
+    --secondary: #000;
 }
 
 body {
     color: var(--secondary);
+    background-color: var(--primary);
     background-image: url('../img/assets/Far_away_and_long_ago_by_Willy_Pogany.png');
     background-size: 90%;
     background-position: 50%;
@@ -36,15 +37,15 @@ body {
     background: var(--primary);
     border: 1px solid var(--secondary);
     transition: 0.75s;
-    margin: 50px auto;
+    margin: 75px auto;
 }
 
 #latest-commit {
-    position: absolute;
-    transform: translateY(-22px);
     font-size: 0.9rem;
-    outline: 1px solid var(--secondary);
+    width: fit-content;
+    border: 1px solid var(--secondary);
     padding: 0;
+    margin: 0;
 }
 
 #commitLink {
@@ -127,7 +128,7 @@ main {
         flex-direction: column;
         justify-content: space-between;
         .text {
-            background: linear-gradient(0deg, #000000, #f1f1f1);
+            background: linear-gradient(0deg, var(--secondary), var(--primary));
             background-clip: text;
             color: transparent;
             
